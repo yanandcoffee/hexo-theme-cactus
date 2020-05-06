@@ -11,7 +11,8 @@
       <h1><%= config.title %></h1>
     </div>
   </a>
-  <div id="nav">
+  <span><%= config.subtitle %></span>
+  <!-- <div id="nav">
     <ul>
       <li class="icon">
         <a href="#"><i class="fas fa-bars fa-2x"></i></a>
@@ -20,5 +21,5 @@
         <li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li>
       <% } %>
     </ul>
-  </div>
+  </div> -->
 </header>
