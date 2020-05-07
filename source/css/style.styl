@@ -17,6 +17,7 @@ html
   border-top: 2px solid $color-text
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
+  scroll-behavior: smooth
 
 body
   margin: 0
@@ -111,6 +112,7 @@ body
     text-align: justify
 
 @import "_partial/header"
+@import "_partial/post/actions"
 @import "_partial/post/actions_desktop"
 @import "_partial/post/actions_mobile"
 @import "_partial/index"
@@ -181,7 +183,7 @@ code
     &:after
       clear: both
 
-  &:hover 
+  &:hover
     .btn-copy
       opacity: 1
 

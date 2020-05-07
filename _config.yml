@@ -14,7 +14,8 @@ direction: ltr
 # navigation menu. Optionally, you can add translations for the 'Key' in
 # languages/*.yml
 # nav:
-#   home: /
+#   CSS: /categories/css
+#   React: /categories/react
 
 
 # Links to your social media accounts.
@@ -75,8 +76,8 @@ copyright:
 #   - gravatar: whether to use your Gravatar as the logo
 logo:
   enabled: true
-  width: 50
-  height: 50
+  width: 75
+  height: 75
   url: /images/logo.png
   gravatar: false
 
@@ -102,7 +103,7 @@ favicon:
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-# highlight: rainbow
+highlight: tomorrow-night
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.

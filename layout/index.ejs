@@ -1,6 +1,12 @@
 <section id="about">
   <% if (config.description) { %>
-    <%- markdown(config.description) %>
+    <h1>About</h1>
+    <div class="flex">
+      <div>
+        <img class="profile-pic" src="images/circle_profile_pic.png" itemprop="image" />
+      </div>
+      <%- markdown(config.description) %>
+    </div>
   <% } %>
   <% if (theme.social_links) { %>
     <p>

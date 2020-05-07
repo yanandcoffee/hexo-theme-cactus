@@ -34,22 +34,6 @@
     li:last-child
       margin-right: 0
 
-  #menu-icon
-    float: right
-    margin-right: 2rem
-    margin-left: 15px
-
-    &:hover
-      color: $color-accent-1
-
-  #menu-icon-tablet
-    float: right
-    margin-right: 2rem
-    margin-left: 15px
-
-    &:hover
-      color: $color-accent-1
-
   #top-icon-tablet
     position: fixed
     right: 2rem
@@ -94,31 +78,7 @@
         a
           margin-right: 0
 
-  #actions
-    float: right
-    margin-top: 2rem
-    margin-right: 2rem
-    width: 100%
-    text-align: right
-
-    ul
-      display: block
-
-    .info
-      display: block
-      font-style: italic
-
-  #share
-    clear: both
-    padding-top: 1rem
-    padding-right: 2rem
-    text-align: right
-
-    li
-      display: block
-      margin: 0
-
-  #toc
+  .toc-wrapper
     float: right
     clear: both
     overflow: auto
@@ -169,8 +129,6 @@
     #menu-icon
       display: none
 
-    #actions
-      display: none
 
 @media screen and (max-width: 1199px)
   #header-post
@@ -185,22 +143,7 @@
     #top-icon-tablet
       display: none !important
 
-@media screen and (min-width: 1199px)
-  #header-post
-    #actions
-      width: auto
-
-      ul
-        display: inline-block
-        float: right
-
-      .info
-        display: inline
-        float: left
-        margin-right: 2rem
-        font-style: italic
-
-@media print 
+@media print
   #header-post
     display: none
   #footer-post-container
