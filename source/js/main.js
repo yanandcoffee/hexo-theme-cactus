@@ -96,7 +96,6 @@ $(document).ready(function() {
         lastScrollTop = topDistance;
 
         // close all submenu"s on scroll
-        $("#nav-footer").hide();
         $("#toc-footer").hide();
 
         // show a "navigation" icon when close to the top of the page,
