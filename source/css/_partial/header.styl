@@ -37,14 +37,18 @@
     font-style: normal
     font-size: .8rem
 
+@media (max-width: 700px)
+  #header #title
+    line-height: 1;
+
 @media screen and (max-width: 480px)
   #header #title
     display: table
-    // min-height: $logo-height
+    min-height: $logo-height
     h1
       display: table-cell
       vertical-align: middle
-
+      
   .subtitle
     display: none
 
