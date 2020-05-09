@@ -29,7 +29,7 @@ body
   background-color: $color-background
   color: $color-text
   font-display: swap // @stylint ignore
-  font-weight: 400
+  font-weight: 500
   font-family: $font-family-body
   line-height: $line-height
   text-rendering: geometricPrecision
@@ -99,6 +99,9 @@ body
 
 @media (max-width: 480px)
   // smaller margins at smaller screen widths
+  figure
+    margin-left: 0
+    margin-right: 0
   .px3
     padding-right: 1rem
     padding-left: 1rem
@@ -126,9 +129,7 @@ body
 
 pre
   overflow-x: auto
-  padding: 10px 15px
   padding-bottom: 0
-  border: 1px dotted $color-border
   border-radius: 4px
   font-size: 13px
   font-family: $font-family-mono
@@ -137,7 +138,7 @@ pre
 
   code
     display: block
-    padding: 0
+    padding: 10px 15px
     border: none
 
 code
