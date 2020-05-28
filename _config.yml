@@ -141,7 +141,7 @@ disqus:
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: false
+  enabled: true
   id: UA-165704155-1
 
 # Fill in you Gravatar user id / email if you want to use your gravatar as the
