@@ -14,14 +14,6 @@ gulp.task('lib:clean',function(){
   return del([ './source/lib/*' ]);
 })
 
-gulp.task('lib:fontAwesome',function(){
-  return gulp.src([
-    'node_modules/@fortawesome/fontawesome-free/webfonts/*',
-    'node_modules/@fortawesome/fontawesome-free/css/all.min.css'
-  ], {base: 'node_modules/@fortawesome/fontawesome-free'})
-    .pipe(gulp.dest('./source/lib/font-awesome'))
-})
-
 gulp.task('lib:mesloFont', function () {
   return download('https://github.com/andreberg/Meslo-Font/blob/master/dist/v1.2/Meslo%20LG%20v1.2.zip?raw=true')
     .pipe(decompress({

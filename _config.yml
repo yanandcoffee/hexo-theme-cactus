@@ -148,3 +148,5 @@ google_analytics:
 # logo and/or favicons of you website.
 gravatar:
   email: mangakjd@gmail.com
+
+fontawesome: https://kit.fontawesome.com/97139a15ad.js
