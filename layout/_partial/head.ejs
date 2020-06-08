@@ -45,10 +45,10 @@
     <% } %>
     <!-- rss -->
     <% if (theme.rss === '' && config.feed && config.feed.path) { %>
-      <% theme.rss = config.feed.path %>
-    <% } %>
-    <% if (theme.rss) { %>
-      <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml" />
+      <% config.feed.path.forEach(function(path) { %>
+        <% name = path.replace('.', '+') %>
+        <link rel="alternate" href="<%= url_for(path) %>" title="<%= config.title %>" type="application/<%= name %>"/>
+      <% }); %>
     <% } %>
     <link rel="stylesheet" href="https://use.typekit.net/eum8aer.css">
 </head>
