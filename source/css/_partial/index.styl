@@ -11,22 +11,35 @@
   padding: 0
 
   .post-item
-    margin-bottom: 1rem
+    margin-bottom: 2rem
     margin-left: 0
     list-style-type: none
 
     .meta
-      display: block
-      margin-right: 0.7rem
-      color: $color-meta
-      font-size: 0.7em
+      margin-left: 0.7rem
+    .postdate
+      background: $color-accent-4;
+      padding: 0 7px;
+      font-size: 0.8rem;
+      color: black;
 
+  .post-title
+    flex: 1 100%;
+
+    a
+      background-image: none;
+      font-weight: 500;
+    
+@media (max-width: 900px)
+  .post-list .post-item .meta
+    display: block;
+    margin-left: 0;
 @media (min-width: 480px)
   .post-list
     .post-item
       display: flex
+      flex-flow: row wrap;
       align-items: center
-      margin-bottom: 10px
 
       .meta
         text-align: left
