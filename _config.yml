@@ -14,8 +14,8 @@ direction: ltr
 # navigation menu. Optionally, you can add translations for the 'Key' in
 # languages/*.yml
 # nav:
-#   CSS: /categories/css
-#   React: /categories/react
+#   Home: /
+#   About: /about/
 
 
 # Links to your social media accounts.
@@ -150,3 +150,4 @@ gravatar:
   email: mangakjd@gmail.com
 
 fontawesome: https://kit.fontawesome.com/97139a15ad.js
+typekit: https://use.typekit.net/eum8aer.css
