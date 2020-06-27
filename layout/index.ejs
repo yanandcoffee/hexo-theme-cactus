@@ -1,6 +1,6 @@
 <section id="about">
   <% if (config.description) { %>
-    <h1>About</h1>
+    <h2>About</h2>
     <div class="flex">
       <div>
         <img class="profile-pic" src="images/circle_profile_pic.png" itemprop="image" />
@@ -37,9 +37,9 @@
 </section>
 
 <section id="writing">
-  <span class="h1">Writing</span>
+  <h2>Writing</h2>
   <% if (theme.tags_overview && site.tags.length) { %>
-  <span class="h2"><%= __('index.topics') %></span>
+  <h2><%= __('index.topics') %></h2>
   <span class="widget tagcloud">
     <%- tagcloud(theme.tags_overview) %>
   </span>
@@ -69,7 +69,7 @@
 
 <% if (site.data.projects) { %>
 <section id="projects">
-  <span class="h1"><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></span>
+  <h2><a href="<%- url_for(theme.projects_url) %>"><%= __('index.projects') %></a></h2>
   <ul class="project-list">
     <% for(var obj in site.data.projects){ %>
       <li class="project-item">
