@@ -26,7 +26,6 @@ article
       top: -1px
       left: -1rem
       color: $color-accent-1
-      content: "#"
       font-weight: bold
       font-size: 1.2rem
 
@@ -121,17 +120,20 @@ article
 
 .article-tag
   a.tag-link
-    display:inline-block
+    display: inline-block
     padding: 0 6px
-    margin-left: 0.7em
-    border: 1px solid rgba(149, 140, 108, 0.12);
+    margin-right: 0.7em
+    border: 1px solid $color-tag
     border-radius: 3px
-    transition: 0.2s ease box-shadow
-    background-image: none;
-    box-shadow: 2px 2px 0 0 $color-tag;
+    transition: 0.2s ease all
+    background-image: none
+    box-shadow: 2px 2px 0 0 $color-tag
     &:hover,
     &:focus
-      border: 1px solid rgba(149, 140, 108, 0.3);
+      border: 1px solid rgba(104, 104, 104, 0.25)
+      box-shadow: 2px 2px 0 0 rgba(104, 104, 104, 0.35)
+    &:last-child
+      margin-right: 0
 
 .article-category
   .category-link
